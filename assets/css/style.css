@@ -2,12 +2,25 @@
 /* fonts setup */
 @font-face {
   font-family: 'greater';
-  src: url('/assets/fonts/greatertheory-webfont.woff2.
-woff2') format('woff2'),
-       url('/assets/fonts/greatertheory-webfont.woff') 
-format('woff');
+  src: url('/assets/fonts/greatertheory-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'baron';
+  src: url('/assets/fonts/baron_black-webfont.woff2') format('woff2'),
+       url('/assets/fonts/baron_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --heading: 'greater';
+  --amber-color: #ffa500;
+  --heading-2: 'baron';
+  --feat-font: 25px;
 
 }
 
@@ -19,8 +32,13 @@ format('woff');
   box-sizing: border-box;
 }
 
-body {
+body{
+  overflow-x: hidden;
+}
 
+p {
+  font-family: 'Manjari', sans-serif;
+  font-size: 20px;
 }
 
 /* Hero section */
@@ -29,40 +47,58 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  position:relative;s
 
 }
 
-/* .hero-sect::before { */
-  /* content: ''; */
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* width: 100%; */
-  /* height: 100%; */
-/* } */
-/* navbar */
 
-.navbar{
-  border: solid rgb(255, 251, 0);
+.logo{
+  /* border: solid lime; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
 }
 
-.navbar ul{
+.logo p{
+  font-size: 16px;
+}
+.navbar{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  /* border: solid red; */
+  width: fit-content;
+  position: relative;
+}
+.nav1, .nav2{
+  /* border: solid rgb(255, 251, 0); */
+  display: flex;
 }
 
+.nav1 ul, .nav2 ul{
+  display: flex;
+}
+
+.nav1{
+  position: absolute;
+  left: -520px;
+}
+
+.nav2{
+  position: absolute;
+  left: 244px;
+}
 .navbar ul li{
-  margin: 20px;
+  margin-left: 20px;
 }
 
 .navbar ul li a{
+  font-family: 'Manjari', sans-serif;
   color:  rgb(255, 145, 0)
 }
 
@@ -73,18 +109,18 @@ body {
   flex-direction: column;
   align-items:center;
   justify-content: center;
-  border: solid rgb(134, 134, 197);
-  width: 60%;
-  margin-top: 148px;
+  /* border: solid rgb(134, 134, 197); */
+  /* width: 60%; */
+  margin-top: 109px;
 
 }
 
 .hero-content h1{
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 50px;
-  width: 700px;
-  font-family: 'greater';
+  width: 750px;
+  font-family: var(--heading);
 }
 
 .hero-content button{
@@ -92,7 +128,7 @@ body {
   height: 40px;
   border: none;
   border-radius: 5px;
-  background-color: rgb(255, 145, 0);
+  background-color: #ffa500;
 }
 
 .hero-content button a{
@@ -103,9 +139,24 @@ body {
 
 .content{
   border: solid green;
-  height: 650px;
+  /* height: 650px; */
+  background-color: #041700;
 }
 
+.vl {
+  background-image:url('/assets/images/linee.png');
+  height: 205px;
+  width: 5px;
+  position: absolute;
+  left: 50.5%;
+  margin-left: -3px;
+  background-repeat: no-repeat;
+  top: 485px;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+/* featured */
 .featured{
   height: 1355px;
   display: flex;
@@ -113,8 +164,20 @@ body {
   align-items: center;
 }
 
-.featured button{
+.vl2 {
+  position:relative;
+  width: 10%;
+  margin-left: -66px;
+}
 
+.vl2 img{
+  height: 1123px;
+  position: absolute;
+  margin-left: -3px;
+  top: -5px;
+  left: -154px;
+  border-radius: 20px;
+  width: 5px;
 }
 
 .heading{
@@ -125,21 +188,138 @@ body {
 
 .heading h1{
   margin: 10px;
-  font-size: 50px;
+  font-size: 45px;
+  font-family: 'greater';
   text-align: center;
   width: 70%;
 }
 
+.heading h2{
+  font-family: var(--heading-2);
+  color: var(--amber-color);
+}
+
 .feat-cont{
   display:inherit;
+  /* flex-direction: column; */
   border: solid red;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; */
+  justify-content: space-around;
+  width: 100%;
+  height: 1360px;
+  text-align: center;
 }
 
-.feat-cont h3{
-  font-size:30px;
+/* left side content */
+
+.left-cont {
+  display: flex;
+  /* align-items: flex-end; */
+  /* justify-content: flex-start; */
+  border: solid green;
+  width: 50%;
+  position: relative;
+  left: -97px;
 }
 
+.left-cont h3{
+  font-family: 'greater';
+  font-size: var(--feat-font);
+  margin-left: auto;
+  /* align-self: center; */
 
+}
 
+.left-cont .main{
+  width: 501px;
+  height: 501px;
+  position: absolute;
+  top: -75px;
+  left: -79px;
+}
+  
+.left-cont .small{
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 194px;
+  left: 201px;
+ 
+}
+
+.left-cont .main-s{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -433px;
+  left: 204px;
+}
+
+.left-cont p{
+  width: 397px;
+  position: relative;
+  top: -333px;
+  left: 227px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.left-cont .small-s{
+  width: 175px;
+  height: 175px;
+  position: relative;
+  top: -361px;
+  left: 392px;
+
+}
+
+/* right-side content */
+
+.right-cont{
+  border: solid blue;
+  width: 50%;
+  position: relative;
+  right: 20px;
+  left: -97px;
+}
+
+.right-cont h3{
+  font-family: var(--heading);
+  font-size: var(--feat-font);
+  width: max-content;
+  
+
+}
+.right-cont .main{
+  width: 501px;
+  height: 501px;
+  position: absolute;
+  top: 93px;
+  left: 178px;
+}
+
+.right-cont .small{
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 350px;
+  left: 178px;
+}
+
+.right-cont .man{
+  position: relative;
+  top: -265px;
+  left: -107px;
+}
+
+p#p1{
+  width: 356px;
+}
+
+p#p2{
+  width: 310px;
+}
+
+p#p3{
+  width: 361px;
+}
