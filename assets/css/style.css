@@ -775,3 +775,10 @@ p#p3{
   text-align: center;
   font-size: 45px;
 }
+
+.community-sect{
+  background: var(--fgreen);
+  height: 1200px;
+  position:relative;
+  top: 843px;
+}
