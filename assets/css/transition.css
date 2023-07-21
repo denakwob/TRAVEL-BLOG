@@ -1,0 +1,87 @@
+/* transitions.css */
+
+/* Add your CSS transitions here */
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Add a transition for the button */
+}
+
+.btn:hover {
+  background: none;
+  border: solid  #ffa500;
+  color:  #ffa500;
+  width: max-content;
+}
+
+/* Sample CSS transition for the hero content */
+.hero-content {
+  opacity: 0; /* Initially set the opacity to 0 */
+  transform: translateY(-20px); /* Slide up the content by 20 pixels */
+  transition: all 0.5s ease-in-out; /* Add a transition for the hero content */
+}
+
+.hero-content.show {
+  opacity: 1; /* When the show class is added, the opacity is set to 1 */
+  transform: translateY(0); /* The content slides back to its original position */
+}
+
+/* CSS styles (unrelated styles have been omitted) */
+
+/* Apply fade-in animation to elements with the "fadeIn" class */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply slide-up animation to elements with the "slideUp" class */
+.slideUp {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpAnimation 1s ease-in-out forwards;
+}
+
+@keyframes slideUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add smooth transitions for hover effects or other interactions */
+/* For example, let's add a color change transition to the navigation links */
+.navbar a {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #682d06;
+}
+
+.element-to-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.element-to-animate:hover {
+  background-color: #ff6600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

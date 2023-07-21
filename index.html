@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/7041593d0f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
-  <title>EDON</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7041593d0f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baron+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Greater+Theory&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+    <title>EDON</title>
+    <link rel="stylesheet" href="../assets/css/transition.css">
+    <script src="./assets/js/script.js"></script>
+  </head>
 </head>
 <body>
   <!-- Looking at the hero section -->
-  <div class="hero-sect">
+  <div class="hero-sect ">
     <div class="navbar">
       <div class="nav1">
         <ul>
@@ -40,7 +46,7 @@
       </div>
     </div>
 
-    <div class="hero-content">
+    <div class="hero-content element-to-animate">
       <h1>EMBARK ON A JOURNEY OF ENDLESS DISCOVERIES</h1>
       <button class="btn"><a href="">START HERE</a></button>
 
@@ -50,8 +56,8 @@
     </div>
   </div>
   <!-- The main content of the page -->
-  <div class="content">
-    <div class="featured">
+  <div class="content element-to-animate">
+    <div class="featured slideUp">
       <div class="heading">
         <h2>FEATURED CONTENT</h2>
         <h1>UNVEILING EXTRAORDINARY DESTINATIONS</h1>
@@ -60,7 +66,7 @@
       <img src="../assets/images/bg-vector2.png" class="vect2" alt="vector2">
         
 
-      <div class="feat-cont">
+      <div class="feat-cont element-to-animate">
         <div class="left-cont">
           <h3>PYRAMID OF EGYPT</h3>
           <div class="mainp-box">
@@ -86,11 +92,11 @@
           </div>
         </div>
 
-        <div class="right-cont">
+        <div class="right-cont element-to-animate" >
           <h3>MICHU PICCHU</h3>
           <p id="p1">Step into the mystical world of Machu Picchu, where ancient wonders whisper tales of a bygone era.</p>
           <p id="p2">Immerse yourself in the awe-inspiring beauty of these majestic ruins, as you unravel the secrets of the  Incas amidst the wonderful breathtaking backdrop of the  Andes.</p>
-          <div class="main-box">
+          <div class="main-box animate-on-scroll">
             <img src="../assets/images/machu-main.png" class="main" alt="machu picchu">
             <img src="../assets/images/machu-small.png" class="small" alt="machu picchu">
           </div>
@@ -102,7 +108,7 @@
     </div>
   </div>
   
-  <div class="about">
+  <div class="about fadeIn">
     <div class="heading">
     <h2 class="sheading">ABOUT</h2>
     <h1 class="mheading">UNLEASHING THE SPIRIT OF TRAVEL</h1>
@@ -114,7 +120,7 @@
           <img src="../assets/images/about-img.png" class="about-im" alt="image">
         </div>
       </div>
-      <div class="desc">
+      <div class="desc slideUp">
         <p>EDON is a vibrant and community-driven platform that celebrates the spirit of travel and connects adventurers from all corners of the globe. At EDON, we believe that the true essence of travel lies in the power of shared experiences and the wisdom gained from fellow explorers.</p>
         <p>Our platform is a dynamic hub where travel enthusiasts come together to share their stories, insights, and recommendations, creating an ever-growing tapestry of knowledge and inspiration. Whether you're seeking off-the-beaten-path destinations, insider tips, or immersive cultural encounters, our community is here to guide you on your journey.</p>
         <button class="btn btn-var btn-var2"><a href="">FIND OUT MORE</a></button>
@@ -133,7 +139,7 @@
 
     <img src="../assets/images/destination-bg.png" class="destination-bg" alt="">
 
-    <div class="destination-card">
+    <div class="destination-card fadeIn">
       <div class="card-1">
         <h4 id="first">AFRICA</h4>
         <img src="../assets/images/dest-af.png" alt="" class="dest-card card1">
@@ -158,26 +164,28 @@
     </div>
   </div>
   
-  <div class="explore-sect">
+  <div class="explore-sect slideUp">
     <h2 class="sheading">EXPLORE THE WORLD</h2>
-    <div class="explore-1">
-      <h1 class="mheading">ANTARTIC</h1>
-      <img src="../assets/images/antartic.jpg" class="explore" alt="">
-    </div>
-    <div class="explore-2">
-      <h1 class="mheading">ASIA</h1>
-      <img src="../assets/images/asia.jpg" class="explore" alt="">
-    </div>
-    <div class="explore-3">
-      <h1 class="mheading">MOROCCO</h1>
-      <img src="../assets/images/morocco.jpg" class="explore" alt="">
-    </div>
-    <div class="explore-4">
-      <h1 class="mheading">MALDIVES</h1>
-      <img src="../assets/images/maldives.jpg" class="explore" alt="">
+    <div class="explore-box">
+      <div class="explore-1">
+        <h1 class="mheading">ANTARTIC</h1>
+        <img src="../assets/images/antartic.jpg" class="explore" alt="">
+      </div>
+      <div class="explore-2">
+        <h1 class="mheading">ASIA</h1>
+        <img src="../assets/images/asia.jpg" class="explore" alt="">
+      </div>
+      <div class="explore-3">
+        <h1 class="mheading">MOROCCO</h1>
+        <img src="../assets/images/morocco.jpg" class="explore" alt="">
+      </div>
+      <div class="explore-4 slideUp">
+        <h1 class="mheading">MALDIVES</h1>
+        <img src="../assets/images/maldives.jpg" class="explore" alt="">
+      </div>
     </div>
 
-    <div class="places">
+    <div class="places bg slideUp">
       <h1 class="mheading">BEAUTIFUL PLACES AROUND THE WORLD</h1>
       <div class="places-box">
         <img src="../assets/images/b1.png" class="places-img one" alt="">
@@ -194,26 +202,58 @@
   </div>
 
   <!-- The community platform -->
-  <div class="community-sect">
+  <div class="community-sect slideUp">
     <h3 class="sheading">OUR COMMUNITY PLATFORM</h3>
     <div class="community-desc">
-    <p>Our community is a place of belonging, where you can engage with like-minded adventurers, exchange valuable insights, and build lasting connections. Whether you're seeking travel recommendations, seeking travel companions, or simply craving a space to share your wanderlust, our platform is here to nurture and support your travel dreams.</p>
+      <p>Our community is a place of belonging, where you can engage with like-minded adventurers, exchange valuable insights, and build lasting connections. Whether you're seeking travel recommendations, seeking travel companions, or simply craving a space to share your wanderlust, our platform is here to nurture and support your travel dreams.</p>
 
+      <div class="community-img">
+        <img src="./assets/images/com.png"  class="com" alt="">
+        <img src="./assets/images/com1.png" class="com1" alt="">
+        <img src="./assets/images/com2.png" class="com2" alt="">
+        <img src="./assets/images/comb.png" class="comb" alt="" srcset="">
+      </div>
+      <!-- <div class="service"> -->
+        <!-- <h3>What to expect</h3> -->
+        <!-- <div class="list-1"> -->
+          <!-- <ul> -->
+            <!-- <li>Travel Stories</li> -->
+            <!-- <li>Destination Discussions</li> -->
+            <!-- <li>Travel Advice</li> -->
+          <!-- </ul> -->
+        <!-- </div> -->
+        <!-- <div class="list-2"> -->
+          <!-- <ul> -->
+            <!-- <li>Local Insights</li> -->
+            <!-- <li>Even and Meetup Listings</li> -->
+            <!-- <li>Travel Tips and Hacks</li> -->
+            <!-- <li>Language Exchange</li> -->
+            <!-- <li>Travel Q&A</li> -->
+          <!-- </ul> -->
+        <!-- </div> -->
+      <!-- </div> -->
   </div>
   <div class="memories">
+    <h3>IN FRAME</h3>
+
 
     </div>
   </div>
 
-  <div class="newsletter">
+  <div class="newsletter fadeIn">
 
   </div>
 
   <!-- The footer information -->
-  <div class="footer">
+  <div class="footer slideUp">
 
   </div>
   
-  <script src="./js/script.js"></script>
+  <script>
+    window.onload = function() {
+      var heroContent = document.querySelector('.hero-content');
+      heroContent.classList.add('show');
+    };
+  </script>
 </body>
 </html>
