@@ -40,7 +40,6 @@ body{
 .mheading{
   text-align: center;
   font-size: 50px;
-  margin-bottom: 50px;
   width: 750px;
   font-family: var(--heading);
 }
@@ -439,6 +438,7 @@ p#p3{
 
 .vect2{
   position: absolute;
+  z-index:1;
   width: 580px;
   top: 1090px;
   left: 914px;
@@ -449,4 +449,63 @@ p#p3{
 .about{
   height: 1038px;
   background: var(--fgreen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-top: -40px;
+}
+
+.about .heading{
+  z-index: 1;
+}
+
+.about-box{
+  display:flex;
+  align-items: center;
+}
+
+.about-border{
+  border: solid  2px var(--amber-color);
+  border-radius: 5px;
+  margin-left: -105px;
+  margin-top: 20px;
+  /* position: absolute; */
+  /* top: 592px; */
+  /* left: -85px; */
+
+}
+
+.about-im{
+  width: 680px;
+  height: 668px;
+  margin: 30px 30px 30px 0px;
+}
+
+.about-border h1{
+  transform: rotate(270deg);
+  position: absolute;
+  top: 551px;
+  left: 173px;
+  font-size: 60px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+}
+
+.desc{
+  width: 459px;
+  text-align: justify;
+  margin-left: 121px;
+  margin-top: 80px;
+  /* position: absolute; */
+  /* top: 80%; */
+  /* left: 709px; */
+}
+
+.desc p{
+  margin-bottom: 58px;
+}
+
+.btn.btn-var.btn-var2{
+  position: unset;
 }
