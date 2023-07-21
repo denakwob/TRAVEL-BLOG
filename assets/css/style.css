@@ -45,7 +45,7 @@ body{
 }
 
 .sheading{
-  font-family: var(--heading-2);
+  font-family: var(--heading-2), Baron Neue;
   font-size: var(--feat-font);
   color: var(--amber-color);
 }
@@ -161,7 +161,7 @@ p {
 }
 
 .vl {
-  background-image:url('/assets/images/linee.png');
+  background-image:url('../assets/images/linee.png');
   height: 205px;
   width: 5px;
   position: absolute;
@@ -230,7 +230,7 @@ p {
 .heading h1{
   margin: 10px;
   font-size: 45px;
-  font-family: 'greater';
+  font-family: 'greater', Greater Theory;
   text-align: center;
   width: 70%;
 }
@@ -273,7 +273,7 @@ img.vect {
 }
 
 .left-cont h3{
-  font-family: 'greater';
+  font-family: 'greater', Greater Theory;
   font-size: var(--feat-font);
   margin-left: auto;
   /* align-self: center; */
