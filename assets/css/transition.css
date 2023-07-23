@@ -15,6 +15,14 @@
   width: max-content;
 }
 
+.btn.btn-var:hover, .btn.btn-var2:hover {
+  background: var(--amber-color);
+}
+
+.btn.btn-var:hover a, .btn.btn-var2:hover a {
+  color: #ffff;
+}
+
 /* Sample CSS transition for the hero content */
 .hero-content {
   opacity: 0; /* Initially set the opacity to 0 */
@@ -78,10 +86,13 @@
   transform: translateY(50px);
   transition: opacity 1s ease, transform 1s ease;
   padding: 20px;
-  border: 1px solid #000;
 }
 
-.element-to-animate:hover {
-  background-color: #ff6600;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.explore:hover{
+  filter: brightness(20%);
+
+}
+
+.explore-2 h1:hover{
+  filter: none;
 }

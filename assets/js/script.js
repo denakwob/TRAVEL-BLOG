@@ -1,16 +1,8 @@
-// Add animation classes when the elements are in the viewport
-function animateOnScroll() {
-  const elementsToShow = document.querySelectorAll('.animate-on-scroll');
-  elementsToShow.forEach((element) => {
-    if (isElementInViewport(element)) {
-      element.classList.add('show');
-    }
-  });
-}
+// JavaScript (script.js)
+const elements = document.querySelectorAll(".element-to-animate");
 
-// Check if the element is in the viewport
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -19,8 +11,12 @@ function isElementInViewport(el) {
   );
 }
 
-// Listen for scroll events and trigger animations
-window.addEventListener('scroll', animateOnScroll);
+function animateElementsOnScroll() {
+  elements.forEach((element) => {
+    if (isElementInViewport(element)) {
+      element.classList.add("show-animation");
+    }
+  });
+}
 
-// Trigger animations on page load
-animateOnScroll();
+window.addEventListener("scroll", animateElementsOnScroll);
