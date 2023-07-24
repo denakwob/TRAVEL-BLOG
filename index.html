@@ -263,7 +263,7 @@
       <h3 class="sheading">NEWSLETTER</h3>
       <div class="news-box">
         <div class="left-news">
-          <form action="#" method="post">
+          <form action="#" name="submit-to-google-sheet" method="post">
             <h2 class="mheading">Subscribe to Our Newsletter</h2>
             <div class="form-box">
               <div class="label1">
@@ -338,7 +338,17 @@
 
     </div>
 
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwySXHtRsvhcDSYeKTbm7V5g-C0TIv_FnJ1Zaw_NSF1DazC96MRGSERlI1RW-u7NVql/exec'
+      const form = document.forms['submit-to-google-sheet']
     
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
     <script>
       window.onload = function() {
         var heroContent = document.querySelector('.hero-content');
